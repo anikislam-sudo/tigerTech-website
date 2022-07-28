@@ -10,7 +10,7 @@
   <body>
     <header>
      <!-- navbar starts -->
-        <nav class="navbar navbar-expand-lg bg-warning">
+        <nav class="navbar navbar-expand-lg bg-warning bg-opacity-77">
             <div class="container">
               <a class="navbar-brand fw-bold text-dark text-opacity-80" href="#">Tigertech</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +36,7 @@
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-dark" type="submit">Search</button>
+                  <button class="btn btn-dark" type="submit">Search</button>
                 </form>
               </div>
             </div>
@@ -167,12 +167,66 @@
   </div>
 </div>
 </div>
+
 </div>
+<button type="button" class="btn btn-dark btn-lg mx-auto d-none d-lg-block ">See All Courses</button>
+
 
      
     
     </section>
     <!--    card end -->
+   <!--  modals starts-->
+<section class="mt-4">
+<div class="container border  rounded-2 bg-warning bg-opacity-77">
+  <div class="d-flex justify-content-evenly align-items-center ">
+    <div class="py-5 mt-5">
+    <h1 class=" px-4 text-white ">Are You Ready?</h1>
+    <p class=" px-4 lead text-white  ">It is a long established fact that a reader will be distracted by the<br>
+      readable content of a page when looking at its layout.</p>
+    </div>
+    <button type="button" class="btn btn-dark btn-lg  " data-bs-toggle="modal" data-bs-target="#reg-modal">
+      Register
+    </button>
+    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">Register</h5>
+            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal" aria-label="Close" button
+              onclick="document.getElementById('id01').style.display='block'">Close</button>
+
+
+
+            </button>
+          </div>
+          <div class="modal-body" >
+
+            <label for="modal-email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="modal-email" placeholder="e.g.anik@example.com">
+            <label for="modal-password" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="modal-password" placeholder="12A****">
+          </div>
+          <div class="modal-footer">
+            
+
+
+            <div class="col-md-12 text-center">
+            <button type="button" class="btn btn-outline-primary ">Submit</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  
+
+
+</section>
+
+    <!--  modals end-->
+
     </main>
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
